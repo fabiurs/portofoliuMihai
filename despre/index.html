@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleForAll.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- icons Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <!-- font montserat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- DE SCHIMBAT TILTUL -->
+    <title>Mihai Pîrlitu || Fotograf || Nuntă • Botez • Lifestyle • Familie</title>
+    
+
+</head>
+<body onload="afis()">
+    <!-- MENIU -->
+
+    <div class="top-wrapper">
+            
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li class="menu-item"> 
+                <a href="../index.html">Acasa</a>
+            </li>
+            <li class="menu-item"> 
+                <a href="../despre/index.html">Despre mine</a>
+            </li>
+            <li class="menu-item"> 
+                <a href="../galerie/index.html">Galerie</a>
+            </li>
+            <li class="menu-item"> 
+                <a href="../contact/index.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <a href="./index.html" class="logo">
+        <img src="../imagini/logoblack.png" alt="logo">
+    </a>
+
+    <!-- ---------- -->
+    
+    <div class="container-content">
+
+        <div class="c-titlu">
+            <p class="titlu">
+                Cât despre mine..
+            </p>
+        </div>
+
+        <div class="c-text">
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti nostrum cumque distinctio beatae ad deserunt qui esse et quia, itaque unde ab nulla numquam blanditiis sint labore, delectus dignissimos pariatur placeat, laboriosam voluptas. Expedita fuga earum voluptates atque voluptatibus. Aliquam tempora expedita non at. Nulla earum ipsum doloribus dolorum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia tempora velit maiores ab illum, perspiciatis dolore architecto consequuntur eaque nam! Iure sed assumenda corrupti ullam laborum quia quibusdam corporis harum, repellendus adipisci delectus doloremque eveniet exercitationem enim explicabo hic quasi perferendis magni ratione ab ipsum nostrum vitae asperiores totam. Accusantium cum deserunt expedita commodi cupiditate consectetur numquam tenetur. Earum natus expedita atque animi aliquam fuga voluptatibus? In, ad animi magni aliquam eius, eum maiores dignissimos laudantium impedit inventore ea quaerat? Sequi nam sed ad aliquid voluptatem, magnam nemo ex molestias repellat exercitationem, voluptatibus consectetur? Numquam tenetur assumenda voluptas aspernatur ipsum!
+            </p>
+        </div>
+
+        <div class="imagine">
+            <img src="../imagini/me2.jpg" alt="Mihai">
+        </div>
+        
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="copyright">
+            <p>© 2020 All rights reserved</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/page.mihai/" target="_blank" class="social-link"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/pirlitu_mihai/" target="_blank" class="social-link"><i
+                    class="fab fa-instagram"></i></i></a>
+            <a href="https://www.youtube.com/channel/UCrsnYoXohafjY3GomBRhZAQ" target="_blank" class="social-link"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+        <div class="link">
+            <p>Website made by
+                <a href="https://bit.ly/fabiursache" target="_blank">Fabi</a>
+            </p>
+        </div>
+    </div>
+
+     <!-- scripts -->
+     <script>
+         function afis(){
+             setTimeout(() => {
+                 document.querySelector(".titlu").style.opacity = "1";
+                 setTimeout(() => {
+                 document.querySelector(".text").style.opacity = "1";  
+                 }, 1000);
+             }, 400);
+         }
+     </script>
+     <script src="../scripts/scriptformenu.js"></script>
+
+</body>
+</html>

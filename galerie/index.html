@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleForAll.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- icons Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <!-- font montserat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- DE SCHIMBAT TILTUL -->
+    <title>Mihai Pîrlitu || Fotograf || Nuntă • Botez • Lifestyle • Familie</title>
+
+
+</head>
+
+<body onload="afis()">
+    
+    
+    <!-- MENIU -->
+
+    <div class="top-wrapper">
+
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li class="menu-item">
+                <a href="../index.html">Acasa</a>
+            </li>
+            <li class="menu-item">
+                <a href="../despre/index.html">Despre mine</a>
+            </li>
+            <li class="menu-item">
+                <a href="../index.html">Galerie</a>
+            </li>
+            <li class="menu-item">
+                <a href="../contact/index.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <a href="./index.html" class="logo">
+        <img src="../imagini/logoblack.png" alt="logo">
+    </a>
+
+    <!-- ---------- -->
+
+
+    <a href="#goto" class="sageti">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <div class="container">
+        <div class="c-title-main">
+            <h1 id="gal">
+                Galerie
+            </h1>
+
+            <div id="goto" class="citat">
+                <p>În lumea fotografiei, mulți pretind a fi profesori. Eu voi ramane mereu un elev.</p>
+            </div>
+        </div>
+
+
+        <div class="container-galerie"  >
+            <div class="c-proiect left"  data-aos="fade-up-left" data-aos-duration="1500" data-aos-easing="fade-out">
+                <div class="c-titlu">
+                    <h2>Portrete</h2>
+                    <a class="btn" href="imagini/portrete/index.html">Vezi Galerie</a>
+                </div>
+                <div class="c-poza">
+                        <img src="imagini/portrete/1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="c-proiect right" data-aos="fade-up-right" data-aos-duration="1500" data-aos-easing="fade-out">
+                <div class="c-titlu">
+                    <h2>Evenimente</h2>
+                    <a class="btn" href="imagini/evenimete/index.html">Vezi Galerie</a>
+                </div>
+                <div class="c-poza">
+                        <img src="imagini/evenimete/1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="c-proiect left" data-aos="fade-up-left" data-aos-duration="1500" data-aos-easing="fade-out">
+                <div class="c-titlu">
+                    <h2>Landscapes</h2>
+                    <a class="btn" href="imagini/natura/index.html">Vezi Galerie</a>
+                </div>
+                <div class="c-poza">
+                        <img src="imagini/natura/7.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="c-proiect right" data-aos="fade-up-right" data-aos-duration="1500" data-aos-easing="fade-out">
+                <div class="c-titlu">
+                    <h2>Sporturi <br> extreme</h2>
+                    <a class="btn" href="#">Vezi Galerie</a>
+                </div>
+                <div class="c-poza">
+                        <img src="imagini/portrete/11.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="c-proiect left" data-aos="fade-up-left" data-aos-duration="1500" data-aos-easing="fade-out">
+                <div class="c-titlu">
+                    <h2>Proiecte <br> Video</h2>
+                    <a class="btn" href="imagini/proiectevideo/index.html">Vezi Galerie</a>
+                </div>
+                <div class="c-poza">
+                        <img src="videothumb.jpg" alt="video">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="copyright">
+            <p>copyright 2020</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/page.mihai/" target="_blank" class="social-link"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/pirlitu_mihai/" target="_blank" class="social-link"><i
+                    class="fab fa-instagram"></i></i></a>
+            <a href="https://www.youtube.com/channel/UCrsnYoXohafjY3GomBRhZAQ" target="_blank" class="social-link"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+        <div class="link">
+            <p>Website made by
+                <a href="#">Fabi</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script>
+        function afis(){
+            setTimeout(() => {
+                document.getElementById("gal").style.opacity = "1";
+                setTimeout(() => {
+                    document.getElementById("goto").style.opacity = "1";
+                }, 500);
+            }, 300);
+        }
+    </script>
+    <script src="../scripts/scriptformenu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

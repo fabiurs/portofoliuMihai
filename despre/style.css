@@ -1,0 +1,92 @@
+.container-content{
+    min-height: 93vh;
+    background-color: white;
+    width: 100%;
+    padding: 10rem;
+}
+
+.c-titlu{
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.titlu{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-weight: 700;
+    font-size: 3rem;
+    opacity: 0;
+    transition: all 3s ease-out;
+}
+
+.imagine{
+    position: relative;
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+}
+
+.imagine img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.c-text{
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container-content{
+        padding: 5rem;
+    }
+
+    .titlu{
+        font-size: 2.3rem;
+    }
+
+    .text{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-content{
+        padding: 6rem 1rem 1rem 1rem;
+    }
+
+    .titlu{
+        font-size: 2rem;
+    }
+
+    .text{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 500px) {
+
+    .titlu{
+        font-size: 1.7rem;
+    }
+
+    .text{
+        font-size: 1.2rem;
+    }
+}
+
+

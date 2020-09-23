@@ -1,0 +1,199 @@
+:root{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(85, 84, 84);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(44, 43, 43);
+  }
+
+  .top-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    height: 4rem;
+    z-index: 1001;
+  }
+
+/* Meniu  */
+
+.menu-btn{
+    position: fixed;
+    top: 1.3rem;
+    right: 1.3rem;
+    cursor: pointer;
+    z-index: 10001;
+}
+
+.menu-btn-lines{
+    display: block;
+    width: 1.8rem;
+    height: 0.6rem;
+    border-top: 3px solid white;
+    border-radius: 2px;
+    transition: all 0.5s ease-in;
+}
+
+.menu{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-out;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu li{
+    list-style-type: none;
+    opacity: 0;
+    margin: 0.6rem;
+    transition: all 0.8s ease;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+    letter-spacing: 0.4rem;
+}
+
+/* logo */
+
+.logo{
+    position: fixed;
+    top: -1.3rem;
+    left: 2rem;
+    z-index: 1005;
+}
+
+.logo img{
+    width: 4rem;
+    height: auto;
+    filter: invert(1);
+    transition: all 0.7s ease-out;
+}
+
+/* Footer */
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.social a{
+    margin: 1rem;
+}
+
+.social i{
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    transition: all 0.4s ease-out;
+}
+
+.social i:hover{
+    background-color: white;
+    color: black;
+}
+
+.copyright{
+    margin-left: 1rem;
+    width: 20%;
+}
+
+.copyright p{
+    font-size: 0.7rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    margin-right: 1rem;
+    width: 20%;
+}
+
+.link p{
+    float: right;
+    color: white;
+}
+
+.link p a{
+    text-decoration: none;
+    color: bisque;
+}
+
+/* MQ */
+
+
+@media screen and (max-width: 400px) {
+    .menu li a{
+        font-size: 1.3rem;
+    }
+
+    .social a{
+        margin: 0.2rem;
+    }
+} 
+

@@ -1,0 +1,55 @@
+.container{
+    margin-top: 10rem;
+    padding: 0 10rem 0 10rem;
+    display: flex;
+}
+
+p, span, a, label{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left{
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+.c-text{
+    padding: 0 5rem 3rem 5rem;
+}
+
+.c-text p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.c-contact{
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.c-contact ul{
+    position: relative;
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c-contact ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+
+.c-contact ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+

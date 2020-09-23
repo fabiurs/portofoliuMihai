@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleForAll.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- icons Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <!-- font montserat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Mihai Pîrlitu || Fotograf || Nuntă • Botez • Lifestyle • Familie</title>
+
+</head>
+
+<body onload="afiseazaLitereTitlu(); pornesteSlide()">
+
+    <!-- MENIU -->
+
+    <div class="top-wrapper">
+
+    </div>
+
+    <a href="#goto" class="sageti">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li class="menu-item">
+                <a href="index.html">Acasa</a>
+            </li>
+            <li class="menu-item">
+                <a href="despre/index.html">Despre mine</a>
+            </li>
+            <li class="menu-item">
+                <a href="galerie/index.html">Galerie</a>
+            </li>
+            <li class="menu-item">
+                <a href="contact/index.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Video background, logo si titlu ------------>
+
+    <div class="video-bg">
+        <video src="video/videobg.mp4" muted autoplay loop class="vid-bg"></video>
+    </div>
+
+    <div class="c-titlu">
+        <h1 class="titlu">
+            <span class="part1">
+                <span class="lit">M</span>
+                <span class="lit">i</span>
+                <span class="lit">h</span>
+                <span class="lit">a</span>
+                <span class="lit">i</span>
+            </span>
+            <br>
+            <span class="part2">
+                <span class="lit">P</span>
+                <span class="lit">î</span>
+                <span class="lit">r</span>
+                <span class="lit">l</span>
+                <span class="lit">i</span>
+                <span class="lit">t</span>
+                <span class="lit">u</span>
+            </span>
+        </h1>
+    </div>
+
+    <span class="logo">
+        <img src="imagini/logoblack.png" alt="logo">
+    </span>
+
+    <!-- content -->
+
+    <div class="content" id="goto">
+        <div class="prim">
+            <div class="img1" data-aos="fade-up-right" data-aos-easing="ease-out" data-aos-duration="1500">
+                <img src="imagini/me1.jpg" alt="Mihai">
+            </div>
+            <div class="c-text" >
+                <p class="descriere" data-aos="fade-up-left" data-aos-easing="ease-out" data-aos-duration="1000">Fotograf si Videograf in Buzau, Romania.</p>
+                <p class="descriere" data-aos="fade-up-left" data-aos-easing="ease-out" data-aos-duration="1000">Ambitios. Curios. Tanar.</p>
+                <p class="descriere" data-aos="fade-up-left" data-aos-easing="ease-out" data-aos-duration="1000">Nu o sa va zic prea multe acum, doar ca iubesc ceea ce fac.</p>
+            </div>
+        </div>
+        <div class="img2" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1800">
+            <img src="imagini/me2.jpg" alt="Mihai">
+        </div>
+        <div class="c-text2" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1000">
+            <p class="descriere2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur sunt error incidunt, rerum
+                repellat repudiandae officia at temporibus reiciendis perspiciatis quisquam eveniet, quam distinctio?
+                Accusamus quos culpa hic mollitia doloribus voluptates illum ut corrupti ullam!
+            </p>
+        </div>
+
+        <div class="c-work">
+            <h1>Latest Work</h1>
+            <div class="c-imagine">
+                <img id="imgS" src="imagini/me1.jpg" alt="work">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="copyright">
+            <p>© 2020 All rights reserved</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/page.mihai/" target="_blank" class="social-link"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/pirlitu_mihai/" target="_blank" class="social-link"><i
+                    class="fab fa-instagram"></i></i></a>
+            <a href="https://www.youtube.com/channel/UCrsnYoXohafjY3GomBRhZAQ" target="_blank" class="social-link"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+        <div class="link">
+            <p>Website made by
+                <a href="https://bit.ly/fabiursache" target="_blank">Fabi</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="scripts/scriptformenu.js"></script>
+    <script src="scripts/scriptforslide.js"></script>
+    <script src="scripts/scriptForTitle.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

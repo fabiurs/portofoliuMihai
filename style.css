@@ -1,0 +1,366 @@
+
+:root{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* video backgroud. logo si titlu*/
+
+.video-bg{
+    position: fixed;
+    z-index: -1999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.vid-bg{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-titlu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlu{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part1{
+    margin-bottom: 2rem;
+}
+
+.lit{
+    width: 1rem;
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+
+/* sageata  */
+
+.sageti{
+    z-index: 1000;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sageti span{
+    margin-top: -0.4rem;
+   display: block;
+   border-bottom: 2px solid white; 
+   border-right: 2px solid white;
+   height: 1rem;
+   width: 1rem; 
+   transform: rotate(45deg);
+   opacity: 0.8;
+   animation-name: animate;
+   animation-duration: 1.8s;
+   animation-iteration-count: infinite;
+}
+
+.sageti span:nth-child(2){
+    animation-delay: 0.6s;
+}
+
+.sageti span:nth-child(3){
+    animation-delay: 1.2s;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/* content */
+
+.content{
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    margin-top: 100vh;
+    width: 100%;
+    padding: 7rem;
+    padding-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prim{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.c-text{
+    width: 45%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-text2{
+    text-align: center;
+    padding: 5rem;
+}
+
+.img1{
+    width: 55%;
+}
+
+.img1 img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img2{
+    margin-top: 20vh;
+    width: 100%;
+}
+
+.img2 img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+
+img{
+    border-radius: 1rem;
+}
+
+.descriere{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3.5px;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: rgb(54, 35, 19);
+}
+
+.descriere:nth-child(1){
+    margin-top: 0;
+}
+
+.descriere2{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    word-spacing: 10px;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: rgb(54, 35, 19);
+}
+
+
+/* work */
+
+.c-work{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-work h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.c-imagine{
+    position: relative;
+    width: 70%;
+    height: 30rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.c-imagine img{
+    height: 100%;
+    width: auto;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+
+
+/* ----------------------- */
+
+@media screen and (max-width: 1450px) {
+    .content{
+        padding: 5rem;
+    }
+    .c-text{
+        pad: 3rem;
+    }
+
+    .descriere{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 1261px) {
+    .content{
+        padding: 5rem;
+    }
+    .c-text{
+        pad: 3rem;
+    }
+
+    .descriere{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .img1{
+        width: 50%;
+    }
+    
+    .c-text{
+        width: 50%;
+        padding: 3rem;
+    }
+
+    .descriere{
+        margin-top: 1rem;
+    }
+    .descriere:nth-child(1){
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .descriere{
+        font-size: 1.5rem;
+    }
+    .descriere2{
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 977px) {
+    .part1{
+        margin-bottom: 1rem;
+    }
+
+    .prim{
+        flex-direction: column;
+    }
+
+    .c-text{
+        margin-top: 10rem;
+        width: 100%;
+    }
+
+    .img1{
+        width: 100%;
+    }
+
+    .descriere{
+        font-size: 2rem;
+    }
+
+    .descriere2{
+        font-size: 2.2rem;
+    }
+
+    .sageti{
+        top: 90%;
+        opacity: 0.6;
+    }
+
+}
+
+@media screen and (max-width: 764px) {
+    .titlu{
+        letter-spacing: 1rem;
+    }
+
+    .c-text2{
+        padding: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 565px) {
+    .content{
+        padding: 2rem;
+    }
+
+    .c-text{
+        margin-top: 5rem;
+    }
+
+    .part1{
+        margin-bottom: 0;
+    }
+
+    .titlu{
+        font-size: 1.8rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .content{
+        padding: 1rem;
+    }
+    .descriere, .descriere2{
+        font-size: 1.6rem;
+    }
+}

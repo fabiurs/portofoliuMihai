@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleForAll.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- icons Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <!-- font montserat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- DE SCHIMBAT TILTUL -->
+    <title>Mihai Pîrlitu || Fotograf || Nuntă • Botez • Lifestyle • Familie</title>
+
+    
+
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- MENIU -->
+
+    <div class="top-wrapper">
+            
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+    </div>
+
+    <div class="menu">
+        <div class="cover">
+            <img id="img1" src="../imagini/poza1meniu.jpg" alt="">
+            <img id="img2" src="../imagini/poza2meniu.jpg" alt="">
+            <img id="img3" src="../imagini/poza3meniu.jpg" alt="">
+            <img id="img4" src="../imagini/poza4meniu.jpg" alt="">
+        </div>
+        <ul>
+            <li class="menu-item" onmouseover="imagineBackground(1)" onmouseout="stergeImagine(1)"> 
+                <a href="../index.html">Acasa</a>
+            </li>
+            <li class="menu-item" onmouseover="imagineBackground(2)" onmouseout="stergeImagine(2)"> 
+                <a href="../despre/index.html">Despre mine</a>
+            </li>
+            <li class="menu-item" onmouseover="imagineBackground(3)" onmouseout="stergeImagine(3)"> 
+                <a href="../galerie/index.html">Galerie</a>
+            </li>
+            <li class="menu-item" onmouseover="imagineBackground(4)" onmouseout="stergeImagine(4)"> 
+                <a href="../contact/index.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <a href="./index.html" class="logo">
+        <img src="../imagini/logoblack.png" alt="logo">
+    </a>
+
+    <!-- ---------- -->
+    
+    <div class="container">
+        <div class="left">
+            <div class="c-text">
+                <p>Nu ezita să mă contactezi pentru mai multe informații! Voi răspunde cât mai curând posibil!</p>
+                <p>Deci trimite-mi un mesaj cu cateva detalii despre evenimentul tau, sau suna-ma ca sa planificam amintirile cu multa grija si profesionalism!</p>
+                
+            </div>
+
+            <div class="c-contact">
+                <ul>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:webmaster@example.com">nume.prenume@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-whatsapp"></i>
+                        <span>0725 986 785</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-facebook-f"></i>
+                        <a href="https://www.facebook.com/page.mihai/" target="_blank">Pirlitu Mihai</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/pirlitu_mihai/" target="_blank">pirlitu_mihai</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="right">
+            <form action="send.php">
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" name="nume">
+
+                <label for="prenume">Prenume:</label>
+                <input type="text" id="prenume" name="prenume">
+
+                <label for="mail">Adresa e-mail:</label>
+                <input type="email" id="mail" name="mail">
+
+                <label for="telefon">Telefon:</label>
+                <input type="text" id="telefon" name="telefon">
+
+                <label for="mesaj   ">Mesajul tau:</label>
+                <input type="text" id="mesaj" name="mesaj">
+
+                <input type="submit">
+            </form>
+        </div> -->
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer" style="display: flex; justify-content: space-between; position: absolute; bottom: 0; ">
+        <div class="copyright">
+            <p>copyright 2020</p>
+        </div>
+        
+        <div class="link">
+            <p>Website made by
+                <a href="#">Fabi</a>
+            </p>
+        </div>
+    </div>
+
+     <!-- scripts -->
+     <script src="scriptformenu.js"></script>
+
+</body>
+</html>

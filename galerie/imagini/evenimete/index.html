@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleForAll.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- icons Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <!-- font montserat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- DE SCHIMBAT TILTUL -->
+    <title>Mihai Pîrlitu || Fotograf || Nuntă • Botez • Lifestyle • Familie</title>
+
+
+</head>
+
+<body>
+    
+
+    <!-- MENIU -->
+
+    <div class="top-wrapper">
+
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+        <span class="menu-btn-lines"></span>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li class="menu-item">
+                <a href="../index.html">Acasa</a>
+            </li>
+            <li class="menu-item">
+                <a href="../despre/index.html">Despre mine</a>
+            </li>
+            <li class="menu-item">
+                <a href="../galerie/index.html">Galerie</a>
+            </li>
+            <li class="menu-item">
+                <a href="../contact/index.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <a href="../../index.html" class="logo">
+        <img src="logoblack.png" alt="logo">
+    </a>
+
+    <!-- ---------- -->
+
+    <div class="slider">
+        <span class="close" onclick="inchide()">&#9747;</span>
+        <span class="arr-right" onclick="mutaInainte()"></span>
+        <span class="arr-left" onclick="mutaInapoi()"></span>
+        <div class="image">
+            <img id="imagine" src="1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="titlu">
+            <a href="../../index.html" class="sageata"></a>
+            <h1>Evenimente</h1>
+        </div>
+
+        <div class="c-poze">
+            <img src="1.jpg" onclick="deschideSlider(1)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="2.jpg" onclick="deschideSlider(2)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="3.jpg" onclick="deschideSlider(3)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="4.jpg" onclick="deschideSlider(4)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="5.jpg" onclick="deschideSlider(5)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="6.jpg" onclick="deschideSlider(6)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="7.jpg" onclick="deschideSlider(7)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="8.jpg" onclick="deschideSlider(8)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="9.jpg" onclick="deschideSlider(9)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="10.jpg" onclick="deschideSlider(10)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="11.jpg" onclick="deschideSlider(11)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="12.jpg" onclick="deschideSlider(12)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="13.jpg" onclick="deschideSlider(13)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="14.jpg" onclick="deschideSlider(14)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="15.jpg" onclick="deschideSlider(15)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="16.jpg" onclick="deschideSlider(16)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="17.jpg" onclick="deschideSlider(17)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="18.jpg" onclick="deschideSlider(17)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="19.jpg" onclick="deschideSlider(17)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="20.jpg" onclick="deschideSlider(17)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="21.jpg" onclick="deschideSlider(17)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="22.jpg" onclick="deschideSlider(17)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+            <img src="23.jpg" onclick="deschideSlider(17)" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" alt="">
+        </div>
+    </div>
+    
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="copyright">
+            <p>copyright 2020</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/page.mihai/" target="_blank" class="social-link"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/pirlitu_mihai/" target="_blank" class="social-link"><i
+                    class="fab fa-instagram"></i></i></a>
+            <a href="https://www.youtube.com/channel/UCrsnYoXohafjY3GomBRhZAQ" target="_blank" class="social-link"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+        <div class="link">
+            <p>Website made by
+                <a href="#">Fabi</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="slidescript.js"></script>
+    <script src="scriptformenu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

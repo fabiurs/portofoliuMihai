@@ -1,0 +1,246 @@
+.container{
+    background-color: white;
+    padding: 10rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.c-title-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh 5rem 20vh 5rem;
+}
+
+.citat{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 50%;
+    opacity: 0;
+    transition: all 3s ease-out;
+}
+
+.citat p{
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.sageti{
+    z-index: 1000;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sageti span{
+    margin-top: -0.4rem;
+   display: block;
+   border-bottom: 2px solid black; 
+   border-right: 2px solid black;
+   height: 1rem;
+   width: 1rem; 
+   transform: rotate(45deg);
+   opacity: 0.8;
+   animation-name: animate;
+   animation-duration: 2.4s;
+   animation-iteration-count: infinite;
+}
+
+.sageti span:nth-child(2){
+    animation-delay: 0.8s;
+}
+
+.sageti span:nth-child(3){
+    animation-delay: 1.6s;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+
+h1{
+    opacity: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    transition: all 3s ease-out;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-galerie{
+    width: 100%;
+}
+
+.c-proiect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-titlu{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-poza{
+    width: 35%;
+}
+
+.c-poza img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+}
+
+.right{
+    flex-direction: row-reverse;
+}
+
+
+h2{
+    letter-spacing: 8px;
+    font-size: 3.8rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1rem;
+    transition: all 0.6s ease-out;
+}
+
+.btn:hover{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+
+
+@media screen and (max-width: 1100px) {
+    h2{
+        font-size: 3rem;
+    }   
+    .btn{
+        padding: 0.7rem;
+        font-size: 1.5rem;
+    }
+    .c-title-main{
+        padding: 2vh 3rem 30vh 3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        padding: 5rem;
+    }
+
+    .c-titlu{
+        width: 50%;
+    }
+
+    h2{
+        font-size: 2.2rem;
+    }
+
+    .c-poza{
+        width: 50%;
+    }
+
+    .c-title-main{
+        padding: 10vh 2rem 30vh 2rem;
+        margin-bottom: 3rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        padding: 2rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+    
+    .btn{
+        font-size: 1.4rem;
+        padding: 0.5rem;
+    }
+    .c-title-main{
+        margin-top: 5rem;
+        padding: 10vh 0 20vh 0;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    .citat p{
+    font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .c-proiect{
+        flex-direction: column;
+    }
+    .c-titlu{
+        margin: 5rem 0 2rem 0;
+    }
+    .c-poza{
+        width: 80%;
+    }
+
+    .c-title-main{
+        padding: 10vh 0 10vh 0;
+    }
+
+}
+@media screen and (max-width: 350px) {
+    .btn{
+        font-size: 1rem;
+    }
+
+    .c-poza{
+        width: 100%;
+    }
+    .citat p{
+        font-size: 1.1rem;
+    }
+    .sageti{
+        top: 90%;
+    }
+}
