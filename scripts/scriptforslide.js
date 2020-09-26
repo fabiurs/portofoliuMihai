@@ -21,5 +21,5 @@ function pornesteSlide(){
                 container.style.opacity = "1";
             }, 200);
         }, 1300);
-    }, 4000);
+    }, 5000);
 }
