@@ -226,13 +226,13 @@ img{
     margin-bottom: 6rem;
     display: flex;
     justify-content: center;
+    transition: all 1s ease;
 }
 
 .c-imagine img{
     height: 100%;
     width: auto;
     opacity: 1;
-    transition: all 1s ease;
 }
 
 
