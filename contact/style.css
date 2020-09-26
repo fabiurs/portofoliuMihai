@@ -27,6 +27,7 @@ p, span, a, label{
 }
 
 .right img{
+    position: relative;
     width: 100%;
     height: auto;
     border-radius: 1rem;
