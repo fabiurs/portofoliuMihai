@@ -193,7 +193,7 @@ img{
     letter-spacing: 3px;
     font-weight: 500;
     word-spacing: 10px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-top: 2rem;
     color: rgb(54, 35, 19);
 }
@@ -211,6 +211,7 @@ img{
 }
 
 .c-work h1{
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-weight: 600;
@@ -234,7 +235,52 @@ img{
     width: auto;
     opacity: 1;
 }
+/* ----------------------- */
 
+.servicii{
+    width: 100%;
+    display: flex;
+    padding: 6rem 1rem 6rem 1rem;
+    flex-direction: row;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.c-servicii-text{
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.c-servicii-text p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.c-servicii-lista{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-servicii-lista ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.c-servicii-lista ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    list-style-type: circle;
+}
 
 
 /* ----------------------- */
@@ -324,6 +370,14 @@ img{
         opacity: 0.6;
     }
 
+    .c-servicii-text{
+        width: 65%;
+    }
+
+    .c-servicii-lista{
+        width: 35%;
+    }
+
 }
 
 @media screen and (max-width: 764px) {
@@ -333,6 +387,21 @@ img{
 
     .c-text2{
         padding: 2rem;
+    }
+    .servicii{
+        flex-direction: column;
+        padding: 2rem 0 2rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .c-servicii-text{
+        border-bottom: 1px solid black;
+        border-right-width: 0;
+        width: 100%;    
+    }
+
+    .c-servicii-lista{
+        width: 100%;
     }
 }
 
