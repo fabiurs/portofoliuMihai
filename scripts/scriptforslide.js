@@ -20,6 +20,6 @@ function pornesteSlide(){
             setTimeout(() => {
                 container.style.opacity = "1";
             }, 200);
-        }, 1000);
-    }, 5000);
+        }, 1300);
+    }, 4000);
 }
