@@ -14,6 +14,7 @@ p, span, a, label{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-right: 2px solid black;
 }
 
@@ -22,6 +23,7 @@ p, span, a, label{
 }
 
 .c-text p{
+    width: 100%;
     text-align: center;
     font-size: 1.5rem;
 }
@@ -37,12 +39,17 @@ p, span, a, label{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .c-contact ul li{
     list-style: none;
     font-size: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .c-contact ul li a{
@@ -50,6 +57,58 @@ p, span, a, label{
     color: black;
 }
 
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
 
+@media screen and (max-width: 1600px) {
+    .c-contact ul li{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .c-text{
+        padding: 0 3rem 5rem 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .c-text{
+        padding: 0 1rem 3rem 1rem;
+    }
+
+    .container{
+        padding: 0 7rem 0 7rem;
+    }
+    .c-contact ul li{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .left{
+        border-right-width: 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .c-contact{
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
 
 
