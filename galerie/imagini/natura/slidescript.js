@@ -27,7 +27,7 @@ function inchide(){
 
 function mutaInainte(){
     imgSource = "";
-    if(position > 7){
+    if(position > 8){
         position = 1;
     }
     else{
@@ -41,7 +41,7 @@ function mutaInainte(){
 function mutaInapoi(){
     imgSource = "";
     if(position < 2){
-        position = 8;
+        position = 9;
     }
     else{
         position--;
