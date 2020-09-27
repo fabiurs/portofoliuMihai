@@ -19,7 +19,7 @@ function pornesteSlide(){
             imagine.src = imgSource;
             setTimeout(() => {
                 container.style.opacity = "1";
-            }, 200);
-        }, 1300);
+            }, 500);
+        }, 1000);
     }, 5000);
 }
