@@ -101,6 +101,11 @@ html{
     font-weight: 500;
     font-size: 1.9rem;
     letter-spacing: 0.4rem;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover{
+    letter-spacing: 0.8rem;
 }
 
 /* logo */
